@@ -17,7 +17,6 @@ const LocationSelector = () => {
   const [inFocus, setInFocus] = useState('from')
   const { pickup, setPickup, dropoff, setDropoff } = useContext(UberContext)
 
-
   return (
     <div className={style.wrapper}>
       <div className={style.searchHeader}>

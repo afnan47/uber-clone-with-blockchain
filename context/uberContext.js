@@ -140,7 +140,7 @@ export const UberProvider = ({ children }) => {
         },
         body: JSON.stringify({
           userWalletAddress: address,
-          name: faker.name.fullName(),
+          name: faker.name.findName(),
         }),
       })
     } catch (error) {

@@ -1,10 +1,10 @@
 {
   "root": true,
   "project": {
-    "name": "uber-clone-blockchain"
+    "name": "uber-blockchain"
   },
   "api": {
-    "projectId": "rz32i88t",
+    "projectId": "jl5yrfd1",
     "dataset": "production"
   },
   "plugins": [

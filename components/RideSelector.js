@@ -22,6 +22,8 @@ const RideSelector = () => {
   const { selectedRide, setSelectedRide, setPrice, basePrice } =
     useContext(UberContext)
 
+  console.log(basePrice)
+
   useEffect(() => {
     ;(async () => {
       try {

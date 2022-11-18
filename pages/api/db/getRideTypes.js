@@ -1,4 +1,4 @@
-import  {client}  from '../../../lib/sanity'
+import { client } from '../../../lib/sanity'
 
 const query = `
 *[_type=="rides"]{
@@ -11,7 +11,8 @@ const query = `
 
 const getRideTypes = async (req, res) => {
   try {
-    const sanityResponse =  client.fetch(query)
+    const sanityResponse = await client.fetch(query)
+
     res.status(200).send({ message: 'success', data: sanityResponse })
   } catch (error) {
     res.status(500).send({ message: 'error', data: error.message })
